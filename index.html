@@ -3,400 +3,435 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Obnex Systems — Cloud & DevOps Consultancy</title>
-  <link rel="stylesheet" href="styles.css" />
+
+  <!-- PRIMARY SEO META -->
+  <title>Obnex Systems | Cloud Infrastructure, DevOps & Platform Engineering Consultancy</title>
+  <meta name="description" content="Obnex Systems is a cloud and DevOps consultancy delivering expert services in Cloud Architecture, CI/CD, SRE, FinOps, DevSecOps, and Platform Engineering. Remote-first. Global delivery." />
+  <meta name="keywords" content="cloud consultancy, DevOps engineering, platform engineering, FinOps, SRE, DevSecOps, Kubernetes, Terraform, AWS, Azure, GCP" />
+  <meta name="author" content="Obnex Systems" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://obnexsystems.com/" />
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://obnexsystems.com/" />
+  <meta property="og:title" content="Obnex Systems | Cloud & DevOps Consultancy" />
+  <meta property="og:description" content="Expert consultancy in Cloud Architecture, DevOps, SRE, Platform Engineering, DevSecOps, and FinOps — helping organisations ship faster, operate securely, and scale efficiently." />
+  <meta property="og:image" content="https://obnexsystems.com/og-image.png" />
+  <meta property="og:site_name" content="Obnex Systems" />
+
+  <!-- TWITTER CARD -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Obnex Systems | Cloud & DevOps Consultancy" />
+  <meta name="twitter:description" content="Expert consultancy in Cloud Architecture, DevOps, SRE, Platform Engineering, DevSecOps, and FinOps." />
+  <meta name="twitter:image" content="https://obnexsystems.com/og-image.png" />
+
+  <!-- PERFORMANCE -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- SCHEMA MARKUP -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Obnex Systems",
+    "url": "https://obnexsystems.com",
+    "description": "Cloud Infrastructure, DevOps, SRE, Platform Engineering, DevSecOps, and FinOps consultancy. Remote-first with global delivery.",
+    "serviceType": ["Cloud Consulting", "DevOps Engineering", "Platform Engineering", "FinOps", "Site Reliability Engineering", "DevSecOps"],
+    "areaServed": "Worldwide",
+    "priceRange": "$$"
+  }
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="navbar" id="navbar">
+  <!-- SKIP LINK -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
     <div class="container nav-inner">
-      <a href="#" class="logo">
-        <span class="logo-mark">O</span>bnex<span class="logo-accent">Systems</span>
+      <a href="/" class="logo" aria-label="Obnex Systems home">
+        <span class="logo-o">O</span><span class="logo-bnex">bnex</span><span class="logo-sys">Systems</span>
       </a>
-      <nav class="nav-links" id="navLinks">
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="#why-us">Why Us</a>
-        <a href="#contact" class="btn btn-sm">Get in Touch</a>
+        <a href="#tech">Tech</a>
+        <a href="#contact" class="btn btn-sm btn-nav">Get in Touch</a>
       </nav>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <span class="badge">Cloud · DevOps · Platform Engineering</span>
-        <h1>Engineering the Infrastructure<br/>That Powers Growth</h1>
-        <p>Obnex Systems delivers expert consultancy in Cloud Architecture, DevOps, SRE, Platform Engineering, DevSecOps, and FinOps — helping organisations ship faster, operate securely, and scale efficiently.</p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary">Start a Conversation</a>
-          <a href="#services" class="btn btn-outline">Explore Services</a>
-        </div>
-      </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="orbit-ring ring-1"></div>
-        <div class="orbit-ring ring-2"></div>
-        <div class="orbit-ring ring-3"></div>
-        <div class="orbit-center">
-          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" width="48" height="48">
-            <rect width="80" height="80" rx="20" fill="#0f62fe"/>
-            <path d="M20 52 L40 28 L60 52" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-            <circle cx="40" cy="28" r="5" fill="white"/>
-            <circle cx="20" cy="52" r="5" fill="white"/>
-            <circle cx="60" cy="52" r="5" fill="white"/>
-          </svg>
-        </div>
-        <div class="orbit-dot dot-1"></div>
-        <div class="orbit-dot dot-2"></div>
-        <div class="orbit-dot dot-3"></div>
-      </div>
-    </div>
-    <div class="hero-stats">
-      <div class="container stats-inner">
-        <div class="stat"><strong>50+</strong><span>Projects Delivered</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><strong>10</strong><span>Service Disciplines</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><strong>30–40%</strong><span>MTTR Reduction</span></div>
-        <div class="stat-divider"></div>
-        <div class="stat"><strong>15–25%</strong><span>Avg. Cloud Cost Reduction</span></div>
-      </div>
-    </div>
-  </section>
+  <main id="main-content">
 
-  <!-- SERVICES -->
-  <section class="services section" id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">What We Do</span>
-        <h2>End-to-End Engineering Services</h2>
-        <p>Three tiers of expertise — from foundational cloud infrastructure through to emerging technology — so you can engage at exactly the level your organisation needs.</p>
-      </div>
-
-      <!-- TIER 1 -->
-      <div class="tier-block">
-        <div class="tier-header">
-          <div class="tier-badge tier-1">Foundation</div>
-          <div>
-            <h3 class="tier-title">Core Services</h3>
-            <p class="tier-desc">The foundation of any modern engineering organisation — build, automate, and operate with confidence.</p>
+    <!-- HERO -->
+    <section class="hero" aria-label="Hero">
+      <canvas class="hero-canvas" id="nodeCanvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <div class="hero-eyebrow" aria-hidden="true">
+            <span class="eyebrow-pip"></span>
+            Cloud &middot; DevOps &middot; Platform Engineering
+          </div>
+          <h1>Engineering the Infrastructure<br/><em>That Powers Growth</em></h1>
+          <p class="hero-sub">Obnex Systems delivers expert consultancy in Cloud Architecture, DevOps, SRE, Platform Engineering, DevSecOps, and FinOps &mdash; helping organisations ship faster, operate securely, and scale with confidence.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary btn-lg">
+              Start a Conversation
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#services" class="btn btn-ghost btn-lg">Explore Services</a>
           </div>
         </div>
-        <div class="services-grid">
+        <div class="hero-metrics" aria-label="Key metrics">
+          <div class="metric-card">
+            <strong>50+</strong>
+            <span>Projects Delivered</span>
+          </div>
+          <div class="metric-card">
+            <strong>10</strong>
+            <span>Service Disciplines</span>
+          </div>
+          <div class="metric-card">
+            <strong>30&ndash;40%</strong>
+            <span>MTTR Reduction</span>
+          </div>
+          <div class="metric-card">
+            <strong>15&ndash;25%</strong>
+            <span>Cloud Cost Saved</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="service-card">
-            <div class="service-icon icon-cloud">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/>
-              </svg>
+    <!-- SERVICES -->
+    <section class="services section" id="services" aria-labelledby="services-h2">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">What We Do</span>
+          <h2 id="services-h2">End-to-End Engineering Services</h2>
+          <p>Three tiers of expertise &mdash; from foundational cloud infrastructure through to emerging technology &mdash; so you can engage at exactly the level your organisation needs.</p>
+        </header>
+
+        <!-- TIER 1 -->
+        <div class="tier-block" data-animate>
+          <div class="tier-header">
+            <span class="tier-badge tier-foundation">Foundation</span>
+            <div>
+              <h3 class="tier-title">Core Cloud &amp; DevOps Services</h3>
+              <p class="tier-desc">The bedrock of any modern engineering organisation &mdash; build, automate, and operate with confidence.</p>
             </div>
-            <h3>Cloud Infrastructure Design &amp; Build</h3>
-            <p>Architecture design, migration, and multi-cloud strategy across AWS, Azure, and GCP. We build scalable, resilient, and cost-optimised cloud environments.</p>
-            <ul class="service-tags">
-              <li>Infrastructure as Code</li><li>Multi-Cloud Strategy</li><li>Cloud Migration</li>
-            </ul>
           </div>
+          <div class="services-grid">
 
-          <div class="service-card">
-            <div class="service-icon icon-devops">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/>
-                <polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/>
-              </svg>
-            </div>
-            <h3>DevOps Engineering &amp; CI/CD Implementation</h3>
-            <p>CI/CD pipeline design and automation, toolchain integration, and developer experience improvement. Accelerate delivery cycles without sacrificing quality.</p>
-            <ul class="service-tags">
-              <li>CI/CD Pipelines</li><li>GitOps</li><li>Toolchain Automation</li>
-            </ul>
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-cloud" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              </div>
+              <h3>Cloud Infrastructure Design &amp; Build</h3>
+              <p>Architecture design, migration, and multi-cloud strategy across AWS, Azure, and GCP. Scalable, resilient, and cost-optimised cloud environments.</p>
+              <ul class="service-tags"><li>Infrastructure as Code</li><li>Multi-Cloud Strategy</li><li>Cloud Migration</li></ul>
+            </article>
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-devops" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="16 3 21 3 21 8"/><line x1="4" y1="20" x2="21" y2="3"/><polyline points="21 16 21 21 16 21"/><line x1="15" y1="15" x2="21" y2="21"/></svg>
+              </div>
+              <h3>DevOps Engineering &amp; CI/CD Implementation</h3>
+              <p>CI/CD pipeline design, toolchain integration, and developer experience improvement. Accelerate delivery cycles without sacrificing quality.</p>
+              <ul class="service-tags"><li>CI/CD Pipelines</li><li>GitOps</li><li>Toolchain Automation</li></ul>
+            </article>
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-finops" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <h3>Cloud Cost Optimisation &amp; FinOps</h3>
+              <p>Full cloud spend visibility, tagging governance, right-sizing, and accountability frameworks that align engineering and finance teams.</p>
+              <ul class="service-tags"><li>Cost Visibility</li><li>Right-Sizing</li><li>Spend Governance</li></ul>
+            </article>
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-sre" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>Site Reliability Engineering Retainer</h3>
+              <p>Ongoing SRE partnership &mdash; define SLOs, implement observability stacks, and build incident response playbooks. Systems that self-heal at scale.</p>
+              <ul class="service-tags"><li>SLO / SLA Design</li><li>Observability</li><li>Incident Management</li></ul>
+            </article>
+
           </div>
-
-          <div class="service-card">
-            <div class="service-icon icon-finops">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
-              </svg>
-            </div>
-            <h3>Cloud Cost Optimisation &amp; FinOps</h3>
-            <p>Gain full cloud spend visibility, implement tagging governance, right-size resources, and create accountability frameworks across engineering and finance teams.</p>
-            <ul class="service-tags">
-              <li>Cost Visibility</li><li>Right-Sizing</li><li>Spend Governance</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon icon-sre">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <h3>Site Reliability Engineering Retainer</h3>
-            <p>Ongoing SRE partnership — define SLOs, implement observability stacks, and build incident response playbooks. Systems that self-heal and stay reliable at scale.</p>
-            <ul class="service-tags">
-              <li>SLO / SLA Design</li><li>Observability</li><li>Incident Management</li>
-            </ul>
-          </div>
-
         </div>
+
+        <!-- TIER 2 -->
+        <div class="tier-block" data-animate>
+          <div class="tier-header">
+            <span class="tier-badge tier-insights">Insights</span>
+            <div>
+              <h3 class="tier-title">Data &amp; Analytics Services</h3>
+              <p class="tier-desc">Turn raw data into decisions and secure your entire delivery pipeline from code to production.</p>
+            </div>
+          </div>
+          <div class="services-grid">
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-data" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+              </div>
+              <h3>Data Engineering &amp; ETL Pipeline Development</h3>
+              <p>Robust data pipelines that ingest, transform, and deliver clean data at scale &mdash; from batch jobs to real-time streaming architectures.</p>
+              <ul class="service-tags"><li>ETL / ELT</li><li>Streaming Pipelines</li><li>Data Warehousing</li></ul>
+            </article>
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-bi" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
+              </div>
+              <h3>Business Intelligence &amp; Dashboard Development</h3>
+              <p>Complex datasets transformed into clear, actionable dashboards. Real-time insight for stakeholders &mdash; no SQL skills required.</p>
+              <ul class="service-tags"><li>Power BI / Grafana</li><li>KPI Frameworks</li><li>Self-Service Analytics</li></ul>
+            </article>
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-devsecops" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              </div>
+              <h3>Security &amp; DevSecOps</h3>
+              <p>Shift security left &mdash; embed SAST, DAST, container scanning, policy-as-code, and secrets management directly into your delivery pipelines.</p>
+              <ul class="service-tags"><li>SAST / DAST</li><li>Policy as Code</li><li>Container Security</li></ul>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- TIER 3 -->
+        <div class="tier-block" data-animate>
+          <div class="tier-header">
+            <span class="tier-badge tier-emerging">Emerging</span>
+            <div>
+              <h3 class="tier-title">Emerging &amp; Unique Services</h3>
+              <p class="tier-desc">Specialised offerings that put cutting-edge technology within reach for forward-thinking teams.</p>
+            </div>
+          </div>
+          <div class="services-grid">
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-ai" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              </div>
+              <h3>Private AI Infrastructure Deployment</h3>
+              <p>Deploy and manage private large language models on your own infrastructure &mdash; full data sovereignty, zero third-party API dependency.</p>
+              <ul class="service-tags"><li>CPU-Optimized LLM</li><li>Quantized Models</li><li>Docker Microservices</li></ul>
+            </article>
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-agri" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/><path d="M12 6v6l4 2"/><path d="M2 2l4 4"/></svg>
+              </div>
+              <h3>Agricultural Technology Consulting</h3>
+              <p>Cloud data engineering applied to agricultural operations &mdash; crop trial pipelines, GEP-compliant systems, and analytics dashboards built on 6+ years with Bayer CropScience.</p>
+              <ul class="service-tags"><li>Crop Trial Pipelines</li><li>GEP-Compliant Systems</li><li>BigQuery Analytics</li></ul>
+            </article>
+
+            <article class="service-card" data-animate>
+              <div class="service-icon icon-homelab" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <h3>Private Cloud &amp; Homelab Setup</h3>
+              <p>Design and build your private cloud &mdash; hardware selection, virtualisation, networking, self-hosted services, and ongoing support.</p>
+              <ul class="service-tags"><li>Proxmox / VMware</li><li>Self-Hosted Services</li><li>Network Design</li></ul>
+            </article>
+
+          </div>
+        </div>
+
       </div>
+    </section>
 
-      <!-- TIER 2 -->
-      <div class="tier-block">
-        <div class="tier-header">
-          <div class="tier-badge tier-2">Insights</div>
-          <div>
-            <h3 class="tier-title">Data &amp; Analytics Services</h3>
-            <p class="tier-desc">Turn raw data into decisions and secure your entire delivery pipeline from code to production.</p>
+    <!-- ABOUT -->
+    <section class="about section section-alt" id="about" aria-labelledby="about-h2">
+      <div class="container about-inner">
+        <div class="about-text" data-animate>
+          <span class="section-label">About Obnex Systems</span>
+          <h2 id="about-h2">A Consultancy Built by Engineers, for Engineers</h2>
+          <p>Obnex Systems was founded with a clear purpose: to close the gap between strategy and execution in modern cloud and platform engineering. We embed with your teams, understand your constraints, and deliver pragmatic solutions &mdash; not slide-deck advice.</p>
+          <p>Our consultants carry hands-on experience across regulated industries, high-growth start-ups, and enterprise environments. We speak the language of both your engineering leads and your CFO.</p>
+          <a href="#contact" class="btn btn-primary">Work With Us</a>
+        </div>
+        <div class="about-stats" data-animate aria-label="Performance metrics">
+          <div class="stat-block">
+            <strong>40%</strong>
+            <span>Cloud Cost Reduction</span>
           </div>
-        </div>
-        <div class="services-grid services-grid-3">
-
-          <div class="service-card">
-            <div class="service-icon icon-data">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/>
-                <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/>
-              </svg>
-            </div>
-            <h3>Data Engineering &amp; ETL Pipeline Development</h3>
-            <p>Design and build robust data pipelines that ingest, transform, and deliver clean data at scale — from batch jobs to real-time streaming architectures.</p>
-            <ul class="service-tags">
-              <li>ETL / ELT</li><li>Streaming Pipelines</li><li>Data Warehousing</li>
-            </ul>
+          <div class="stat-block">
+            <strong>10&times;</strong>
+            <span>Deployment Frequency</span>
           </div>
-
-          <div class="service-card">
-            <div class="service-icon icon-bi">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/>
-                <line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/>
-              </svg>
-            </div>
-            <h3>Business Intelligence &amp; Dashboard Development</h3>
-            <p>Transform complex datasets into clear, actionable dashboards. We build BI solutions that give stakeholders real-time insight without needing SQL skills.</p>
-            <ul class="service-tags">
-              <li>Power BI / Grafana</li><li>KPI Frameworks</li><li>Self-Service Analytics</li>
-            </ul>
+          <div class="stat-block">
+            <strong>65%</strong>
+            <span>MTTR Reduction</span>
           </div>
-
-          <div class="service-card">
-            <div class="service-icon icon-devsecops">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"/>
-                <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
-              </svg>
-            </div>
-            <h3>Security &amp; DevSecOps</h3>
-            <p>Shift security left — embed SAST, DAST, container scanning, policy-as-code, and secrets management directly into your delivery pipelines.</p>
-            <ul class="service-tags">
-              <li>SAST / DAST</li><li>Policy as Code</li><li>Container Security</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- TIER 3 -->
-      <div class="tier-block">
-        <div class="tier-header">
-          <div class="tier-badge tier-3">Emerging</div>
-          <div>
-            <h3 class="tier-title">Emerging &amp; Unique Services</h3>
-            <p class="tier-desc">Specialised offerings that put cutting-edge technology within reach — for forward-thinking teams and individuals alike.</p>
-          </div>
-        </div>
-        <div class="services-grid services-grid-3">
-
-          <div class="service-card">
-            <div class="service-icon icon-ai">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/>
-              </svg>
-            </div>
-            <h3>Private AI Infrastructure Deployment</h3>
-            <p>Deploy and manage private large language models and AI workloads on your own infrastructure — full data sovereignty, no third-party API dependency.</p>
-            <ul class="service-tags">
-              <li>CPU-Optimized LLM Deployment</li><li>Quantized Model Selection</li><li>Docker Microservices</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon icon-agri">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/>
-                <path d="M12 6v6l4 2"/><path d="M2 2l4 4"/>
-              </svg>
-            </div>
-            <h3>Agricultural Technology Consulting</h3>
-            <p>Apply cloud data engineering and analytics to agricultural operations — crop trial data pipelines, GEP-compliant data collection systems, Spotfire/Tableau dashboards, and BigQuery analytics. Built on 6 years of hands-on experience with Bayer CropScience across West Africa and Germany.</p>
-            <ul class="service-tags">
-              <li>Crop Trial Pipelines</li><li>GEP-Compliant Systems</li><li>BigQuery Analytics</li>
-            </ul>
-          </div>
-
-          <div class="service-card">
-            <div class="service-icon icon-homelab">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
-                <polyline points="9 22 9 12 15 12 15 22"/>
-              </svg>
-            </div>
-            <h3>Private Cloud &amp; Homelab Setup</h3>
-            <p>Design and build your private cloud or homelab environment — hardware selection, virtualisation, networking, self-hosted services, and ongoing support.</p>
-            <ul class="service-tags">
-              <li>Proxmox / VMware</li><li>Self-Hosted Services</li><li>Network Design</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about section section-alt" id="about">
-    <div class="container about-inner">
-      <div class="about-visual" aria-hidden="true">
-        <div class="about-card card-1">
-          <span class="card-label">Cloud Cost Saved</span>
-          <strong>40%</strong>
-        </div>
-        <div class="about-card card-2">
-          <span class="card-label">Deployment Frequency</span>
-          <strong>10× faster</strong>
-        </div>
-        <div class="about-card card-3">
-          <span class="card-label">MTTR Reduction</span>
-          <strong>65%</strong>
-        </div>
-        <div class="about-bg-shape"></div>
-      </div>
-      <div class="about-text">
-        <span class="section-label">About Obnex Systems</span>
-        <h2>A Consultancy Built by Engineers, for Engineers</h2>
-        <p>Obnex Systems was founded with a clear purpose: to close the gap between strategy and execution in modern cloud and platform engineering. We embed with your teams, understand your constraints, and deliver pragmatic solutions — not slide-deck advice.</p>
-        <p>Our consultants have hands-on experience across regulated industries, high-growth start-ups, and enterprise environments. We speak the language of both your engineering leads and your CFO.</p>
-        <a href="#contact" class="btn btn-primary">Work With Us</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- WHY US -->
-  <section class="why-us section" id="why-us">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-label">Why Obnex Systems</span>
-        <h2>The Principles We Operate By</h2>
-      </div>
-      <div class="pillars-grid">
-        <div class="pillar">
-          <div class="pillar-number">01</div>
-          <h3>Embedded, Not Outsourced</h3>
-          <p>We work as part of your team — joining standups, reviewing PRs, and contributing code — rather than handing over a report and disappearing.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-number">02</div>
-          <h3>Outcomes Over Activity</h3>
-          <p>We measure success by deployment frequency, incident rates, and cost reduction — not by hours billed or tickets closed.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-number">03</div>
-          <h3>Knowledge Transfer by Default</h3>
-          <p>Every engagement leaves your team more capable than before. Documentation, training, and pair-working are built into every project.</p>
-        </div>
-        <div class="pillar">
-          <div class="pillar-number">04</div>
-          <h3>Security as a First Principle</h3>
-          <p>We design systems secure-by-default. Security is not a phase at the end — it is woven into architecture, pipelines, and operations from day one.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TECH STRIP -->
-  <section class="tech-strip">
-    <div class="container">
-      <p class="tech-label">Technologies We Work With</p>
-      <div class="tech-list">
-        <span>AWS</span><span>Azure</span><span>GCP</span><span>Kubernetes</span>
-        <span>Terraform</span><span>Helm</span><span>ArgoCD</span><span>GitHub Actions</span>
-        <span>Prometheus</span><span>Grafana</span><span>Vault</span><span>Backstage</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container contact-inner">
-      <div class="contact-text">
-        <span class="section-label">Get in Touch</span>
-        <h2>Ready to Transform Your Platform?</h2>
-        <p>Tell us about your challenges. Whether you need a quick assessment or a long-term partnership, we will find the right engagement model for your team.</p>
-        <div class="contact-details">
-          <div class="contact-item">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <span>Remote-first · Global delivery</span>
+          <div class="stat-block">
+            <strong>50+</strong>
+            <span>Projects Delivered</span>
           </div>
         </div>
       </div>
-      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="07668f51-63ea-4dce-96bf-9bf2a3ee25db" />
-        <input type="hidden" name="subject" value="New Obnex Systems Enquiry" />
-        <input type="hidden" name="from_name" value="Obnex Systems Website" />
-        <input type="checkbox" name="botcheck" style="display:none" />
-        <div class="form-row">
-          <div class="form-group">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" name="name" placeholder="Jane Smith" required />
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us section" id="why-us" aria-labelledby="why-h2">
+      <div class="container">
+        <header class="section-header">
+          <span class="section-label">Why Obnex Systems</span>
+          <h2 id="why-h2">The Principles We Operate By</h2>
+          <p>Four commitments that distinguish how we work &mdash; and why clients come back.</p>
+        </header>
+        <div class="pillars-grid">
+          <div class="pillar" data-animate>
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Embedded, Not Outsourced</h3>
+            <p>We work as part of your team &mdash; joining standups, reviewing PRs, and contributing code &mdash; rather than handing over a report and disappearing.</p>
           </div>
-          <div class="form-group">
-            <label for="email">Work Email</label>
-            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          <div class="pillar" data-animate>
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Outcomes Over Activity</h3>
+            <p>We measure success by deployment frequency, incident rates, and cost reduction &mdash; not by hours billed or tickets closed.</p>
+          </div>
+          <div class="pillar" data-animate>
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </div>
+            <h3>Knowledge Transfer by Default</h3>
+            <p>Every engagement leaves your team more capable. Documentation, training, and pair-working are built into every project &mdash; not billed as extras.</p>
+          </div>
+          <div class="pillar" data-animate>
+            <div class="pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="22" height="22"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Security as a First Principle</h3>
+            <p>Security is not a phase at the end &mdash; it is woven into architecture, pipelines, and operations from day one. Secure by default, always.</p>
           </div>
         </div>
-        <div class="form-group">
-          <label for="service">Service of Interest</label>
-          <select id="service" name="service">
-            <option value="">Select a service...</option>
-            <option>Cloud Infrastructure Design &amp; Build</option>
-            <option>DevOps Engineering &amp; CI/CD</option>
-            <option>Cloud Cost Optimisation &amp; FinOps</option>
-            <option>Site Reliability Engineering</option>
-            <option>Data Engineering &amp; ETL Pipelines</option>
-            <option>Business Intelligence &amp; Dashboards</option>
-            <option>Security &amp; DevSecOps</option>
-            <option>Private AI Infrastructure</option>
-            <option>Agricultural Technology Consulting</option>
-            <option>Private Cloud &amp; Homelab Setup</option>
-            <option>Multiple / Not sure yet</option>
-          </select>
+      </div>
+    </section>
+
+    <!-- TECH STRIP -->
+    <section class="tech-strip" id="tech" aria-label="Technologies we work with">
+      <div class="container">
+        <p class="tech-label">Technologies We Work With</p>
+        <div class="tech-scroll" aria-hidden="true">
+          <div class="tech-track">
+            <span>AWS</span><span>Azure</span><span>GCP</span>
+            <span>Kubernetes</span><span>Terraform</span><span>Helm</span>
+            <span>ArgoCD</span><span>GitHub Actions</span><span>Prometheus</span>
+            <span>Grafana</span><span>Vault</span><span>Backstage</span>
+            <span>Docker</span><span>Python</span><span>PostgreSQL</span>
+            <span>AWS</span><span>Azure</span><span>GCP</span>
+            <span>Kubernetes</span><span>Terraform</span><span>Helm</span>
+            <span>ArgoCD</span><span>GitHub Actions</span><span>Prometheus</span>
+            <span>Grafana</span><span>Vault</span><span>Backstage</span>
+            <span>Docker</span><span>Python</span><span>PostgreSQL</span>
+          </div>
         </div>
-        <div class="form-group">
-          <label for="message">Tell Us About Your Challenge</label>
-          <textarea id="message" name="message" rows="4" placeholder="Briefly describe your current challenge or goal..." required></textarea>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact section" id="contact" aria-labelledby="contact-h2">
+      <div class="container contact-inner">
+        <div class="contact-text" data-animate>
+          <span class="section-label">Get in Touch</span>
+          <h2 id="contact-h2">Ready to Transform Your Platform?</h2>
+          <p>Tell us about your challenges. Whether you need a quick assessment or a long-term partnership, we will find the right engagement model for your team.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <span>Remote-first &middot; Global delivery</span>
+            </div>
+            <div class="contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Response within one business day</span>
+            </div>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
-        <p class="form-note">We typically respond within one business day.</p>
-      </form>
-    </div>
-  </section>
+        <div class="contact-form-wrap" data-animate>
+          <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate aria-label="Contact enquiry form">
+            <input type="hidden" name="access_key" value="07668f51-63ea-4dce-96bf-9bf2a3ee25db" />
+            <input type="hidden" name="subject" value="New Obnex Systems Enquiry" />
+            <input type="hidden" name="from_name" value="Obnex Systems Website" />
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" aria-hidden="true" />
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span class="required" aria-label="required">*</span></label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Work Email <span class="required" aria-label="required">*</span></label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organisation</label>
+              <input type="text" id="company" name="company" placeholder="Acme Corp" autocomplete="organization" />
+            </div>
+            <div class="form-group">
+              <label for="service">Service of Interest</label>
+              <select id="service" name="service">
+                <option value="">Select a service...</option>
+                <option>Cloud Infrastructure Design &amp; Build</option>
+                <option>DevOps Engineering &amp; CI/CD</option>
+                <option>Cloud Cost Optimisation &amp; FinOps</option>
+                <option>Site Reliability Engineering</option>
+                <option>Data Engineering &amp; ETL Pipelines</option>
+                <option>Business Intelligence &amp; Dashboards</option>
+                <option>Security &amp; DevSecOps</option>
+                <option>Private AI Infrastructure</option>
+                <option>Agricultural Technology Consulting</option>
+                <option>Private Cloud &amp; Homelab Setup</option>
+                <option>Multiple / Not sure yet</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Tell Us About Your Challenge <span class="required" aria-label="required">*</span></label>
+              <textarea id="message" name="message" rows="4" placeholder="Briefly describe your current challenge or goal..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              Send Message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+            <p class="form-note" aria-live="polite" id="formNote">We typically respond within one business day.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo"><span class="logo-mark">O</span>bnex<span class="logo-accent">Systems</span></a>
-        <p>Cloud · DevOps · SRE · Platform Engineering · DevSecOps · FinOps</p>
+        <a href="/" class="logo" aria-label="Obnex Systems home">
+          <span class="logo-o">O</span><span class="logo-bnex">bnex</span><span class="logo-sys">Systems</span>
+        </a>
+        <p>Cloud &middot; DevOps &middot; SRE &middot; Platform Engineering &middot; DevSecOps &middot; FinOps</p>
       </div>
-      <nav class="footer-nav">
+      <nav class="footer-nav" aria-label="Footer navigation">
         <div class="footer-col">
           <strong>Core Services</strong>
           <a href="#services">Cloud Infrastructure</a>
@@ -411,10 +446,10 @@
           <a href="#services">DevSecOps</a>
         </div>
         <div class="footer-col">
-          <strong>Emerging Services</strong>
+          <strong>Emerging</strong>
           <a href="#services">Private AI Infrastructure</a>
           <a href="#services">AgriTech Consulting</a>
-          <a href="#services">Private Cloud &amp; Homelab</a>
+          <a href="#services">Private Cloud</a>
         </div>
         <div class="footer-col">
           <strong>Company</strong>
@@ -425,11 +460,17 @@
       </nav>
     </div>
     <div class="footer-bottom">
-      <div class="container">
-        <p>&copy; 2026 Obnex Systems. All rights reserved.</p>
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> Obnex Systems. All rights reserved.</p>
+        <p>Secured by <a href="https://www.cloudflare.com" rel="noopener noreferrer" target="_blank">Cloudflare</a></p>
       </div>
     </div>
   </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
 
   <script src="script.js"></script>
 </body>
