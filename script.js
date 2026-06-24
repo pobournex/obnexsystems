@@ -42,6 +42,42 @@ document.addEventListener('keydown', e => {
   }
 });
 
+// ── Services dropdown ─────────────────────────
+const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
+const dropdownMenu   = document.querySelector('.nav-dropdown-menu');
+
+if (dropdownToggle && dropdownMenu) {
+  dropdownToggle.addEventListener('click', e => {
+    e.stopPropagation();
+    const isOpen = dropdownMenu.classList.toggle('open');
+    dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Close when clicking a menu item
+  dropdownMenu.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      dropdownMenu.classList.remove('open');
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Close when clicking outside
+  document.addEventListener('click', () => {
+    dropdownMenu.classList.remove('open');
+    dropdownToggle.setAttribute('aria-expanded', 'false');
+  });
+
+  // Close on ESC
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      dropdownMenu.classList.remove('open');
+      dropdownToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
 // ── Dynamic year ──────────────────────────────
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
