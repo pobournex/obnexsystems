@@ -42,39 +42,62 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// ── Services dropdown ─────────────────────────
+// ── Services cascading dropdown ───────────────
 const dropdownToggle = document.querySelector('.nav-dropdown-toggle');
 const dropdownMenu   = document.querySelector('.nav-dropdown-menu');
 
+function closeAll() {
+  dropdownMenu.classList.remove('open');
+  dropdownToggle.setAttribute('aria-expanded', 'false');
+  document.querySelectorAll('.nav-dropdown-item').forEach(item => {
+    item.classList.remove('submenu-open');
+    item.querySelector('.nav-submenu')?.classList.remove('open');
+  });
+}
+
 if (dropdownToggle && dropdownMenu) {
+  // Level 1 toggle
   dropdownToggle.addEventListener('click', e => {
     e.stopPropagation();
     const isOpen = dropdownMenu.classList.toggle('open');
     dropdownToggle.setAttribute('aria-expanded', String(isOpen));
+    if (!isOpen) closeAll();
   });
 
-  // Close when clicking a menu item
-  dropdownMenu.querySelectorAll('a').forEach(a => {
+  // Level 2 — click group to open submenu
+  document.querySelectorAll('.nav-dropdown-item.has-submenu').forEach(item => {
+    const link    = item.querySelector('.dropdown-group-link');
+    const submenu = item.querySelector('.nav-submenu');
+
+    link.addEventListener('click', e => {
+      e.stopPropagation();
+      const isOpen = item.classList.toggle('submenu-open');
+      // Close other open submenus
+      document.querySelectorAll('.nav-dropdown-item').forEach(other => {
+        if (other !== item) {
+          other.classList.remove('submenu-open');
+          other.querySelector('.nav-submenu')?.classList.remove('open');
+        }
+      });
+      submenu.classList.toggle('open', isOpen);
+    });
+  });
+
+  // Close all when clicking a final link
+  dropdownMenu.querySelectorAll('.nav-submenu a').forEach(a => {
     a.addEventListener('click', () => {
-      dropdownMenu.classList.remove('open');
-      dropdownToggle.setAttribute('aria-expanded', 'false');
+      closeAll();
       navLinks.classList.remove('open');
       hamburger.setAttribute('aria-expanded', 'false');
     });
   });
 
-  // Close when clicking outside
-  document.addEventListener('click', () => {
-    dropdownMenu.classList.remove('open');
-    dropdownToggle.setAttribute('aria-expanded', 'false');
-  });
+  // Close on outside click
+  document.addEventListener('click', closeAll);
 
   // Close on ESC
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') {
-      dropdownMenu.classList.remove('open');
-      dropdownToggle.setAttribute('aria-expanded', 'false');
-    }
+    if (e.key === 'Escape') closeAll();
   });
 }
 
